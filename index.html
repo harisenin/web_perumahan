@@ -106,7 +106,7 @@ $('#txt-search').keyup(function(){
 				$.each(data, function(key, val){
 				if ((val.nama_perumahan.search(regex) != -1) ||
 					(val.nama_developer.search(regex) != -1) ||
-					(val.nama_perumahan.search(regex) != -1) ||
+					(val.nama_cluster.search(regex) != -1) ||
 					(val.luas_tanah.search(regex) != -1) ||
 					(val.panjang_tanah.search(regex) != -1) ||
 					(val.luas_bangunan.search(regex) != -1) ||
@@ -135,7 +135,7 @@ $('#txt-search').keyup(function(){
 					output +='<td>'+val.no+'</td>';
 					output +='<td>'+val.nama_perumahan+'</td>';
 					output +='<td>'+val.nama_developer+'</td>';
-					output +='<td>'+val.nama_perumahan+'</td>';
+					output +='<td>'+val.nama_cluster+'</td>';
 					output +='<td>'+val.luas_tanah+'</td>';
 					output +='<td>'+val.panjang_tanah+'</td>';
 					output +='<td>'+val.luas_bangunan+'</td>';
