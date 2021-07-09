@@ -81,6 +81,7 @@ $('#txt-search').keyup(function(){
 				output +='<th>Nama Cluster</th>';
 				output +='<th>Luas Tanah</th>';
 				output +='<th>Panjang Tanah</th>';
+				output +='<th>Lebar Tanah</th>';
 				output +='<th>luas bangunan</th>';
 				output +='<th>harga jual</th>';
 				output +='<th>jumlah lantai</th>';
@@ -109,6 +110,7 @@ $('#txt-search').keyup(function(){
 					(val.nama_cluster.search(regex) != -1) ||
 					(val.luas_tanah.search(regex) != -1) ||
 					(val.panjang_tanah.search(regex) != -1) ||
+					(val.lebar_tanah.search(regex) != -1) ||
 					(val.luas_bangunan.search(regex) != -1) ||
 					(val.harga_jual.search(regex) != -1) ||
 					(val.jumlah_lantai.search(regex) != -1) ||
@@ -138,6 +140,7 @@ $('#txt-search').keyup(function(){
 					output +='<td>'+val.nama_cluster+'</td>';
 					output +='<td>'+val.luas_tanah+'</td>';
 					output +='<td>'+val.panjang_tanah+'</td>';
+					output +='<td>'+val.lebar_tanah+'</td>';
 					output +='<td>'+val.luas_bangunan+'</td>';
 					output +='<td>'+val.harga_jual+'</td>';
 					output +='<td>'+val.jumlah_lantai+'</td>';
