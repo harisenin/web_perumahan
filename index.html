@@ -24,10 +24,11 @@
 		}
 	</style>
 
-  <title>Dewa Perumahan</title>
+	<title>Dewa Perumahan</title>
 </head>
+
 <body>
-  <div class="container" >
+	<div class="container" >
     <h1>Dewa Perumahan Mojokerto</h1>
 	<form role="form">
         <div class="form-group">
@@ -35,13 +36,13 @@
         </div>
 	</form>
 	
-  </div>
-  <br><br>
-  <div id="filter-records"></div>
+	</div>
+	<br><br>
+	<div id="filter-records"></div>
 </body>
 </html>
 <script type="text/javascript">
-  $(document).ready(function(){
+	$(document).ready(function(){
     
 	var data=
 			[
@@ -54,7 +55,12 @@
 				{"no":"7","nama_perumahan":"Kemlagi","nama_developer":"Budi Pro","nama_cluster":"Kemlagi","luas_tanah":"60","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"30","harga_jual":"150500000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"2","ada_dapur":"0","ada_canopy":"0","ada_pagar":"1","ada_taman":"0","ada_one_gate_system":"0","sudah_smart_home":"1","keabsahan":"SHM","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"3","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"0.2","tahun_data":"2021"},
 				{"no":"8","nama_perumahan":"Djati Garden Subsidi DKT Tol Sumo","nama_developer":"Budi Pro","nama_cluster":"Djati Garden Subsidi DKT Tol Sumo","luas_tanah":"60","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"30","harga_jual":"150000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"2","ada_dapur":"0","ada_canopy":"0","ada_pagar":"0","ada_taman":"0","ada_one_gate_system":"1","sudah_smart_home":"1","keabsahan":"SHM","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"3","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"0.2","tahun_data":"2021"},
 				{"no":"9","nama_perumahan":"Grand Zam Zam Regency Mojokerto","nama_developer":"PT. Budi Luhur","nama_cluster":"Grand Zam Zam Regency Mojokerto","luas_tanah":"66","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"36","harga_jual":"195000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"2","ada_dapur":"0","ada_canopy":"0","ada_pagar":"0","ada_taman":"1","ada_one_gate_system":"0","sudah_smart_home":"0","keabsahan":"SHGB","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"4","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"},
-				{"no":"10","nama_perumahan":"Perumahan Bhineka Land","nama_developer":"Bhineka Land","nama_cluster":"Perumahan Mojokerto","luas_tanah":"60","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"30","harga_jual":"199000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"1","ada_dapur":"0","ada_canopy":"0","ada_pagar":"0","ada_taman":"0","ada_one_gate_system":"1","sudah_smart_home":"0","keabsahan":"Belum Pecah","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"3","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"1.5","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"}
+				{"no":"10","nama_perumahan":"Perumahan Bhineka Land","nama_developer":"Bhineka Land","nama_cluster":"Perumahan Mojokerto","luas_tanah":"60","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"30","harga_jual":"199000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"1","ada_dapur":"0","ada_canopy":"0","ada_pagar":"0","ada_taman":"0","ada_one_gate_system":"1","sudah_smart_home":"0","keabsahan":"N/A","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"3","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"1.5","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"},
+				{"no":"11","nama_perumahan":"Bukit Mentari Brayu","nama_developer":"N/A","nama_cluster":"Bukit Mentari Brayu","luas_tanah":"60","panjang_tanah":"10","lebar_tanah":"6","luas_bangunan":"22","harga_jual":"221000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"1","ada_dapur":"1","ada_canopy":"1","ada_pagar":"1","ada_taman":"1","ada_one_gate_system":"0","sudah_smart_home":"0","keabsahan":"SHGB","biasa_KPR":"0","jenis_air":"PDAM","lebar_jalan":"N/A","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"},
+				{"no":"12","nama_perumahan":"Graha Sativa","nama_developer":"N/A","nama_cluster":"Graha Sativa","luas_tanah":"80","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"40","harga_jual":"353000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"2","ada_dapur":"1","ada_canopy":"1","ada_pagar":"1","ada_taman":"1","ada_one_gate_system":"0","sudah_smart_home":"0","keabsahan":"SHM","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"N/A","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"},
+				{"no":"13","nama_perumahan":"Gondang Residence","nama_developer":"N/A","nama_cluster":"Gondang Residence","luas_tanah":"105","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"55","harga_jual":"403000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"2","ada_dapur":"1","ada_canopy":"1","ada_pagar":"1","ada_taman":"1","ada_one_gate_system":"0","sudah_smart_home":"0","keabsahan":"SHGB","biasa_KPR":"0","jenis_air":"PDAM","lebar_jalan":"N/A","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"},
+				{"no":"14","nama_perumahan":"d'Ahsana property sayriah","nama_developer":"N/A","nama_cluster":"d'Ahsana property sayriah","luas_tanah":"60","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"65","harga_jual":"335000000","jumlah_lantai":"2","jumlah_kamar_mandi":"2","jumlah_kamar_tidur":"3","ada_dapur":"1","ada_canopy":"1","ada_pagar":"1","ada_taman":"1","ada_one_gate_system":"0","sudah_smart_home":"0","keabsahan":"SHM","biasa_KPR":"1","jenis_air":"PDAM","lebar_jalan":"N/A","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"},
+				{"no":"15","nama_perumahan":"GREEN STAR RESIDENCE BRANGKAL","nama_developer":"N/A","nama_cluster":"Green Star Residence Brankal","luas_tanah":"66","panjang_tanah":"N/A","lebar_tanah":"N/A","luas_bangunan":"30","harga_jual":"140000000","jumlah_lantai":"1","jumlah_kamar_mandi":"1","jumlah_kamar_tidur":"2","ada_dapur":"0","ada_canopy":"0","ada_pagar":"0","ada_taman":"0","ada_one_gate_system":"0","sudah_smart_home":"0","keabsahan":"N/A","biasa_KPR":"1","jenis_air":"SUMUR BOR","lebar_jalan":"N/A","jarak_bandara_terdekat":"N/A","jarak_rumah_sakit_terdekat":"N/A","jarak_pusat_kebutuhan_pokok":"N/A","jarak_pusat_kota":"N/A","tahun_data":"2021"}
 			];
 
 
@@ -97,7 +103,7 @@ $('#txt-search').keyup(function(){
 				output +='<th>tahun data</th>';
 				output +='</tr>';
             var count = 1;
-			  $.each(data, function(key, val){
+				$.each(data, function(key, val){
 				if ((val.nama_perumahan.search(regex) != -1) ||
 					(val.nama_developer.search(regex) != -1) ||
 					(val.nama_perumahan.search(regex) != -1) ||
@@ -154,15 +160,15 @@ $('#txt-search').keyup(function(){
 					output +='<td>'+val.tahun_data+'</td>';
 					output +='</tr>';
 				  
-				  if(count%2 == 0){
+					if(count%2 == 0){
 					output += '';
-				  }
-				  count++;
+					}
+					count++;
 				}
 					
-			  });
-			  output += '</table></div>';
-			  $('#filter-records').html(output);
+				});
+				output += '</table></div>';
+				$('#filter-records').html(output);
         });
-  });
+	});
 </script>
